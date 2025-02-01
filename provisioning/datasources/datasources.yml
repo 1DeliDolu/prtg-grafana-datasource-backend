@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+  - name: 'PRTG'
+    type: 'prtg-grafana-datasource'
+    access: proxy
+    isDefault: false
+    orgId: 1
+    version: 1
+    editable: true
+    jsonData:
+      hostname: 'prtg-host'
+      username: 'prtg-username'
+      cacheTimeOut: 5
+    secureJsonData:
+      passhash: 'prtg-passhash'
